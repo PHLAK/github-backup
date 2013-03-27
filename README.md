@@ -1,10 +1,11 @@
-Github Backup - Backup Your GitHub Repositories
-===============================================
+Github Backup
+=============
 Created by, [Chris Kankiewicz](http://www.ChrisKankiewicz.com)
 
 
-Usage
+Intro
 -----
+Backup your GitHub repositories to [git bundles](http://www.git-scm.com/docs/git-bundle).
 
 **Run a backup**
 
