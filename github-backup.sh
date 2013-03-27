@@ -16,9 +16,9 @@ for line in $(python listRepos.py $@); do
     name=$(echo $line | awk -F ';' '{ print $2 }')
     repo=$(echo $line | awk -F ';' '{ print $3 }')
 
-    ## Set the bundle path    
-    bundle_path="${script_path}/bundles/${now}/${user}"
-    
+    ## Set the bundle path
+    bundle_path="${script_path}/bundles/${user}/${now}"
+
     ## Create bundle path if not present
     if [ ! -d $bundle_path ]; then
         mkdir -pv $bundle_path
