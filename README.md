@@ -1,5 +1,5 @@
-Github Backup - Backup your GitHub repositories to bundle files
-===============================================================
+Github Backup - Backup Your GitHub Repositories
+===============================================
 Created by, [Chris Kankiewicz](http://www.ChrisKankiewicz.com)
 
 
