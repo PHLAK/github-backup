@@ -1,2 +1,1 @@
   - Fails when cloning an empty repo
-  - Timestamped bundle path to prevent overwriting?

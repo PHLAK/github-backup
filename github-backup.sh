@@ -4,8 +4,9 @@ if [ -z $@ ]; then
     echo "ERROR: No users specified"
 fi
 
-## Set this script's path
+## Set vars
 script_path=$(pwd)
+now=$(date +%Y%m%d-%H%M%S)
 
 ## Get list of repositories
 for line in $(python listRepos.py $@); do
@@ -16,7 +17,7 @@ for line in $(python listRepos.py $@); do
     repo=$(echo $line | awk -F ';' '{ print $3 }')
 
     ## Set the bundle path    
-    bundle_path="${script_path}/bundles/${user}"
+    bundle_path="${script_path}/bundles/${now}/${user}"
     
     ## Create bundle path if not present
     if [ ! -d $bundle_path ]; then
