@@ -3,7 +3,7 @@
 import sys,urllib2,json
 
 for user in sys.argv[1:]:
-			
+	
 	try:
 		
 		## Fetch user repositories from GitHub
@@ -17,7 +17,7 @@ for user in sys.argv[1:]:
 			
 			## Print repo info
 			print user + ";" + repo['name'] + ";" + repo["git_url"]
-				
+			
 	except:
 		
 		continue
